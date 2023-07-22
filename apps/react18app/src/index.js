@@ -4,26 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
-import { registerMicroApps, start } from 'qiankun';
-
-registerMicroApps([
-  {
-    name: 'react app', // app name registered
-    entry: '//localhost:3001',
-    container: '#app1',
-    activeRule: '/app1',
-  },
-  {
-    name: 'vue app',
-    // entry: { scripts: ['//localhost:7100/main.js'] },
-    entry: '//localhost:3002',
-    container: '#app2',
-    activeRule: '/app2',
-  },
-]);
-
-start();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
