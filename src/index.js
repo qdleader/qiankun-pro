@@ -9,13 +9,16 @@ import { registerMicroApps, start } from 'qiankun';
 
 registerMicroApps([
   {
-    name: 'react app', // app name registered
+    name: 'app1', // app name registered
     entry: '//localhost:3001',
     container: '#app1',
     activeRule: '/app1',
+    props: {
+      nickname: "qdleader"
+    }
   },
   {
-    name: 'vue app',
+    name: 'app2',
     // entry: { scripts: ['//localhost:7100/main.js'] },
     entry: '//localhost:3002',
     container: '#app2',

@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      111
+      <div>主应用app</div>
       <div id="app1"></div>
       <div id="app1"></div>
     </div>
