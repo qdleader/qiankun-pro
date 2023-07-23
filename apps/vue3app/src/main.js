@@ -8,7 +8,7 @@ import App from './App.vue'
 
 
 // let router = null;
-let instance = null;
+// let instance = null;
 function render(props = {}) {
   const { container } = props;
   // router = new VueRouter({
@@ -16,7 +16,8 @@ function render(props = {}) {
   //   mode: 'history',
   //   // routes,
   // });
-  instance = createApp(App).mount(container ? container.querySelector('#app') : '#app')
+  // instance = createApp(App).mount(container ? container.querySelector('#app') : '#app')
+  createApp(App).mount(container ? container.querySelector('#app') : '#app')
   // instance = new Vue({
   //   router,
   //   store,
@@ -37,8 +38,8 @@ export async function mount(props) {
   render(props);
 }
 export async function unmount() {
-  instance.$destroy();
-  instance.$el.innerHTML = '';
-  instance = null;
+  // instance.$destroy();
+  // instance.$el.innerHTML = '';
+  // instance = null;
   // router = null;
 }

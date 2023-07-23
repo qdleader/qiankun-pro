@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals"
 import { registerMicroApps, start } from "qiankun"
 
 import { initGlobalState, MicroAppStateActions } from "qiankun"
+import { BrowserRouter } from "react-router-dom"
 
 const state = {
 	token: "qdleader",
@@ -49,7 +50,9 @@ start()
 const root = ReactDOM.createRoot(document.getElementById("root")!)
 root.render(
 	<React.StrictMode>
-		<App />
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
 	</React.StrictMode>
 )
 
