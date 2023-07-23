@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div>主应用app</div>
       <div id="app1"></div>
-      <div id="app1"></div>
+      <div id="app2"></div>
     </div>
   );
 }
