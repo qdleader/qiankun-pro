@@ -37,6 +37,7 @@
 	},
 	"devDependencies": {
 		"@rescripts/cli": "^0.0.16",
-		"react-app-rewired": "^2.2.1"
+		"react-app-rewired": "^2.2.1",
+		"react-router-dom": "^6.14.2"
 	}
 }
