@@ -1,5 +1,5 @@
 <template>
-  <routerLink to="/detail"> 详情</routerLink>
+  <router-link to="/detail"> 详情</router-link>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <router-view/>
 </template>

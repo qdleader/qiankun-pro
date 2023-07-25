@@ -4,7 +4,7 @@ import { createApp } from 'vue'
 import './public-path';
 import App from './App.vue'
 
-
+import router from './router/index.js';
 
 
 // let router = null;
@@ -17,7 +17,7 @@ function render(props = {}) {
   //   // routes,
   // });
   // instance = createApp(App).mount(container ? container.querySelector('#app') : '#app')
-  createApp(App).mount(container ? container.querySelector('#app') : '#app')
+  createApp(App).use(router).mount(container ? container.querySelector('#app') : '#app')
   // instance = new Vue({
   //   router,
   //   store,
